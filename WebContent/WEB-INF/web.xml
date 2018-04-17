@@ -19,4 +19,5 @@
     <servlet-name>ProductServlet</servlet-name>
     <url-pattern>/productServlet</url-pattern>
   </servlet-mapping>
+
 </web-app>
