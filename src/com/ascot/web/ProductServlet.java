@@ -26,6 +26,8 @@ public class ProductServlet extends HttpServlet {
 		
 		//3.将request发送到list.jsp中
 		request.getRequestDispatcher("/admin/product/list.jsp").forward(request, response);
+		
+	
 	}
 
 	
