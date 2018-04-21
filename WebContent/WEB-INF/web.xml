@@ -19,5 +19,24 @@
     <servlet-name>ProductServlet</servlet-name>
     <url-pattern>/productServlet</url-pattern>
   </servlet-mapping>
-
+  <servlet>
+    <description></description>
+    <display-name>AdminAddProductServlet</display-name>
+    <servlet-name>AdminAddProductServlet</servlet-name>
+    <servlet-class>com.ascot.web.AdminAddProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminAddProductServlet</servlet-name>
+    <url-pattern>/addProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminAddProductUIServlet</display-name>
+    <servlet-name>AdminAddProductUIServlet</servlet-name>
+    <servlet-class>com.ascot.web.AdminAddProductUIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminAddProductUIServlet</servlet-name>
+    <url-pattern>/addCategoryServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

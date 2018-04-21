@@ -11,6 +11,14 @@ public class Product {
 	private int is_hot;
 	private String pdesc;
 	private int flag;
+	private String cid;
+	
+	public String getCid() {
+		return cid;
+	}
+	public void setCid(String cid) {
+		this.cid = cid;
+	}
 	public String getPid() {
 		return pid;
 	}
