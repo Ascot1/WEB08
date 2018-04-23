@@ -64,7 +64,7 @@
 						所属分类：
 					</td>
 					<td class="ta_01" bgColor="#ffffff" colspan="3">
-					<select name="categorySecond.csid">
+					<select name="cid">
 					   <c:forEach items="${categoryList }" var="category">
 							<option value="${category.cid }">${category.cname }</option>
 					  </c:forEach>

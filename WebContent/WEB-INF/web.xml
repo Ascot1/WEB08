@@ -39,4 +39,14 @@
     <servlet-name>AdminAddProductUIServlet</servlet-name>
     <url-pattern>/addCategoryServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminDelProductServlet</display-name>
+    <servlet-name>AdminDelProductServlet</servlet-name>
+    <servlet-class>com.ascot.web.AdminDelProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminDelProductServlet</servlet-name>
+    <url-pattern>/delProductServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -31,6 +31,11 @@ public class AdminProductService {
 		// TODO Auto-generated method stub
 		return dao.addProductUIDao();
 	}
+	public void delProductService(String pid) throws SQLException {
+		// TODO Auto-generated method stub
+		//传递数据到Dao层
+		dao.delProductDao(pid);
+	}
 	
 	
 	

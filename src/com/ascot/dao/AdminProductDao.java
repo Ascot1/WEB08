@@ -42,5 +42,14 @@ public class AdminProductDao {
 		List<Category> categorys =  qr.query(sql, new BeanListHandler<Category>(Category.class));
 		return categorys;
 	}
+
+	public void delProductDao(String pid) throws SQLException {
+		// 数据库操作
+		QueryRunner qr = new QueryRunner(DataSourceUtils.getDataSource());
+		String sql = "delete from product where pid=?";
+		qr.update(sql, pid);
+		
+		
+	}
 	
 }
