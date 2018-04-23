@@ -12,6 +12,13 @@
 			function addProduct(){
 				window.location.href = "${pageContext.request.contextPath}/addCategoryServlet";
 			}
+			function delProduct(pid){
+				//将id传到web层
+				var isDel = confirm("您确定要删除吗？");
+				if(isDel){
+					location.href="${pageContext.request.contextPath}/delProductServlet?pid="+pid;
+				}
+			}
 		</script>
 </HEAD>
 <body>
@@ -70,7 +77,7 @@
 										border="0" style="CURSOR: hand">
 								</a></td>
 
-								<td align="center" style="HEIGHT: 22px"><a href="#"> <img
+								<td align="center" style="HEIGHT: 22px"><a href="javascript:void(0)" onclick="delProduct(${product.pid})"> <img
 										src="${pageContext.request.contextPath}/images/i_del.gif"
 										width="16" height="16" border="0" style="CURSOR: hand">
 								</a></td>
